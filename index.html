@@ -33,7 +33,33 @@
       </nav>
   </section>
 
-  <section class="header mt0">
+  <section class="">
+
+     <div >
+       
+       <div id="lightning"></div>
+<script src="https://creative-hawk-433st4-dev-ed.my.salesforce.com/lightning/SpinnerInverse"></script>
+<script>
+     $Lightning.use("c:PublicApp", function() {
+        $Lightning.createComponent("c:SpinnerInverse", {
+              objectName: "Contact"
+            },
+              "lightning",
+              function(cmp) {
+                console.log("LWC component was created");
+                // do some stuff
+              }
+          );
+        },
+       'https://creative-hawk-433st4-dev-ed.my.salesforce.com/'
+      );
+</script>
+
+
+
+     </div>
+
+
     <div>
       <p>A Front End web developer</p>
     </div>
@@ -43,7 +69,7 @@
     <div class="blogCards" style="width: 70%;">
       <h1>Technologies</h1>
       <p>
-        I'm familiar with HTML5, CSS3, JavaScript, ReactJS.
+        I'm familiar with HTML5, CSS3, basic JavaScript, .
       </p>
     </div>
     <div class="blogCards" style="width: 70%;">
